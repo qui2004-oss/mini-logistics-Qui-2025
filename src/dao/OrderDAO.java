@@ -17,7 +17,7 @@ public class OrderDAO {
             ps.setInt(3, o.getStatusId());
             ps.setDouble(4, o.getTotalPrice());
             ps.executeUpdate();
-            System.out.println("✅ Thêm đơn hàng thành công!");
+            System.out.println("Thêm đơn hàng thành công!");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -63,7 +63,7 @@ public class OrderDAO {
             ps.setInt(1, newStatusId);
             ps.setInt(2, orderId);
             ps.executeUpdate();
-            System.out.println("✅ Cập nhật trạng thái đơn hàng thành công!");
+            System.out.println("Cập nhật trạng thái đơn hàng thành công!");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -75,7 +75,7 @@ public class OrderDAO {
              PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setInt(1, id);
             ps.executeUpdate();
-            System.out.println("🗑️ Đã xóa đơn hàng!");
+            System.out.println("Đã xóa đơn hàng!");
         } catch (SQLException e) {
             e.printStackTrace();
         }

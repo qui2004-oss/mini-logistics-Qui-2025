@@ -5,10 +5,6 @@ import dao.CustomerDAO;
 import dao.ShipperDAO;
 import dao.StatusDAO;
 import model.Order;
-import model.Customer;
-import model.Shipper;
-import model.Status;
-
 import java.util.List;
 import java.util.Scanner;
 
